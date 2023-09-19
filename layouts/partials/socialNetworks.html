@@ -1,0 +1,14 @@
+<div class="social-networks">
+    {{ with .Site.Params.email }}
+        <a href="mailto:{{.}}"><img class="social-network-image" src="{{ "images/social-networks/email.svg"  | relURL }}"/></a>
+    {{ end }}
+    {{ with .Site.Params.linkedinUrl }}
+       <a href="{{.}}" target="_blank"><img class="social-network-image" src="{{ "images/social-networks/linkedin.svg" | relURL }}"/></a>
+    {{ end }}
+    {{ with .Site.Params.twitterUrl }}
+       <a href="{{.}}" target="_blank"><img class="social-network-image" src="{{ "images/social-networks/twitter.svg"  | relURL }}"/></a>
+    {{ end }}
+    {{ with .Site.Params.maltUrl }}
+       <a href="{{.}}" target="_blank"><img class="social-network-image" src="{{ "images/social-networks/malt.png"  | relURL }}"/></a>
+    {{ end }}
+</div>

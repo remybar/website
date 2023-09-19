@@ -1,0 +1,39 @@
+/**
+ * override theme variables
+ */
+:root {
+  --main-width: 1024px !important;
+  --project-card-color: #dddddd;
+}
+
+.main {
+  padding: 0 var(--gap) !important;
+}
+
+.dark {
+  --project-card-color: #555555;
+}
+
+body {
+  font-family: "Montserrat";
+  line-height: 1.5;
+}
+
+/**
+ * Global layout
+ */
+.header {
+  padding: 0.5rem 0;
+}
+
+.page-header h1 {
+  font-family: "Monospace";
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.post-title {
+  font-family: "Monospace";
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}

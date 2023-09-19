@@ -1,0 +1,31 @@
+baseURL = 'http://localhost:1313'
+languageCode = 'fr-fr'
+title = 'Rémy Baranx'
+theme = 'PaperMod'
+
+[params]
+    hideFooter = true
+    label.icon = '/images/logo.svg'
+    mainSections = ["posts"]
+    twitterUrl = 'https://twitter.com/remybaranx'
+    linkedinUrl = 'https://www.linkedin.com/in/remy-baranx'
+    maltUrl = 'https://fr.malt.be/profile/remybaranx1'
+    email = 'remy.baranx@gmail.com'
+
+[menu]
+    [[menu.main]]
+        name = 'Blog'
+        pageRef = '/'
+        weight = 10
+    [[menu.main]]
+        name = 'Mes projets'
+        pageRef = '/portfolio'
+        weight = 20
+    [[menu.main]]
+        name = 'Qui suis-je ?'
+        pageRef = '/about'
+        weight = 30
+    [[menu.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 40

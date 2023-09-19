@@ -1,0 +1,15 @@
+<div class="project-card">
+  <div class="project-card-header">
+    <h2 class="project-title">{{.Title}}</h2>
+    <div class="project-links">
+      {{ with .Params.githubUrl }}{{- partial "githubLink.html" . }}{{ end }}
+      {{ with .Params.demoUrl }}{{- partial "demoLink.html" . }}{{ end }}
+      </div>
+  </div>
+  <div class="project-card-content">
+    <div class="project-description">{{.Content}}</div>
+  </div>
+  <div class="project-card-footer">
+    {{ with .Params.technologies }}{{- partial "technologies.html" . }} {{ end }}
+  </div>
+</div>

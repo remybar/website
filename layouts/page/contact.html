@@ -1,0 +1,17 @@
+{{- define "main" }}
+
+<header class="page-header">
+<h1 class="post-title">{{ .Title }}</h1>
+</header>
+
+{{ with .Content}}
+<div class="contact-page-content">
+    {{.}}
+</div>
+{{ end }}
+
+{{ partial "socialNetworks.html" . }}
+
+{{ partial "contactForm.html" . }}
+
+{{- end }}
